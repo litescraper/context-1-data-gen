@@ -357,7 +357,7 @@ def get_page_jina_backup(url: str) -> Optional[str]:
 
 def search(query: str) -> List[Dict[str, Any]]:
     session = _get_session()
-    url = "https://google.serper.dev/search"
+    url = f"{(os.getenv('SERPER_BASE_URL') or 'https://google.serper.dev').rstrip('/')}/search"
 
     payload = json.dumps({"q": query})
     headers = {

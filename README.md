@@ -71,3 +71,7 @@ If you find our work useful please consider citing us
   url          = {https://trychroma.com/research/context-1}
 }
 ```
+
+### Compatible search endpoints
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others). Set `SERPER_BASE_URL` to the provider base URL without `/search` and use its API key. The existing Serper endpoint remains the default.
